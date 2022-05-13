@@ -1,0 +1,12 @@
+#declare thetexture = texture {
+      pigment { 
+         gradient z
+         color_map {
+            [0 color rgb <1,1,1> ]
+            [1 color rgb <0,0,0> ]
+          }
+         scale <1,1,ZMAX-ZMIN>
+         translate <0,0,ZMIN>
+      }
+      finish { ambient 1 diffuse 0 specular 0 }
+   }
